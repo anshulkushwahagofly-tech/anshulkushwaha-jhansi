@@ -511,11 +511,11 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:46px 5% 
 }
 </script>
 <script>
-  if (!localStorage.getItem('hasBeenRedirected')) {
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has('from') && urlParams.get('from') === 'website1') {
     setTimeout(function() {
-      localStorage.setItem('hasBeenRedirected', 'true');
       window.location.href = "https://anshuu-jhansi.vercel.app/";
-    }, 1000);
+    }, 5000);
   }
 </script>
 </head>
@@ -1644,6 +1644,7 @@ document.addEventListener('click',e=>{
 </script>
 </body>
 </html>
+
 
 
 
