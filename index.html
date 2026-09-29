@@ -550,7 +550,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:46px 5% 
   <a href="#about" onclick="closeMenu()">About</a>
   <a href="#services" onclick="closeMenu()">Services</a>
   <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
-  <a href="#pricing" onclick="closeMenu()">Pricing</a>
+  
   <a href="#testimonials" onclick="closeMenu()">Reviews</a>
   <a href="#contact" onclick="closeMenu()" class="m-cta">Hire Me →</a>
 </div>
@@ -562,7 +562,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:46px 5% 
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#pricing">Pricing</a></li>
+    
     <li><a href="#testimonials">Reviews</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -799,70 +799,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:46px 5% 
   </div>
 </section>
 
-<!-- PRICING -->
-<section id="pricing">
-  <div class="section-inner">
-    <div class="reveal" style="text-align:center">
-      <div class="section-eyebrow">Investment</div>
-      <h2>Transparent <em>Pricing</em> Plans</h2>
-      <p class="section-desc" style="margin:10px auto 44px">Affordable packages for all business sizes. No hidden charges — just results.</p>
-    </div>
-    <div class="pricing-grid">
-      <div class="pricing-card reveal">
-        <div class="pricing-icon">🚀</div>
-        <div class="pricing-name">Starter</div>
-        <div class="pricing-price"><span class="cur">₹</span>8,999<span class="per">/project</span></div>
-        <div class="pricing-desc">Perfect for small businesses getting started online.</div>
-        <div class="pricing-divider"></div>
-        <div class="pricing-features">
-          <div class="pf"><div class="ck">✓</div>5-Page WordPress Website</div>
-          <div class="pf"><div class="ck">✓</div>Mobile Responsive Design</div>
-          <div class="pf"><div class="ck">✓</div>Basic On-Page SEO</div>
-          <div class="pf"><div class="ck">✓</div>Contact Form Setup</div>
-          <div class="pf"><div class="ck">✓</div>1 Month Support</div>
-          <div class="pf no"><div class="ck">✗</div>Google Ads Campaign</div>
-          <div class="pf no"><div class="ck">✗</div>Social Media Management</div>
-        </div>
-        <a href="#contact" class="pricing-cta">Get Started →</a>
-      </div>
-      <div class="pricing-card popular reveal">
-        <div class="popular-badge">Most Popular</div>
-        <div class="pricing-icon">⚡</div>
-        <div class="pricing-name">Growth</div>
-        <div class="pricing-price"><span class="cur">₹</span>19,999<span class="per">/month</span></div>
-        <div class="pricing-desc">Complete digital package for growing businesses ready to scale.</div>
-        <div class="pricing-divider"></div>
-        <div class="pricing-features">
-          <div class="pf"><div class="ck">✓</div>Custom WordPress Website</div>
-          <div class="pf"><div class="ck">✓</div>Advanced SEO (On + Off Page)</div>
-          <div class="pf"><div class="ck">✓</div>Google Ads Management</div>
-          <div class="pf"><div class="ck">✓</div>Social Media (2 Platforms)</div>
-          <div class="pf"><div class="ck">✓</div>Monthly Performance Report</div>
-          <div class="pf"><div class="ck">✓</div>WooCommerce (if needed)</div>
-          <div class="pf"><div class="ck">✓</div>3 Months Support</div>
-        </div>
-        <a href="#contact" class="pricing-cta">Start Growing →</a>
-      </div>
-      <div class="pricing-card reveal">
-        <div class="pricing-icon">👑</div>
-        <div class="pricing-name">Enterprise</div>
-        <div class="pricing-price"><span class="cur" style="font-size:.9rem">₹</span>Custom<span class="per">/month</span></div>
-        <div class="pricing-desc">Full-scale digital domination for established businesses.</div>
-        <div class="pricing-divider"></div>
-        <div class="pricing-features">
-          <div class="pf"><div class="ck">✓</div>Everything in Growth</div>
-          <div class="pf"><div class="ck">✓</div>Dedicated Account Manager</div>
-          <div class="pf"><div class="ck">✓</div>YouTube Ads + Video Strategy</div>
-          <div class="pf"><div class="ck">✓</div>Social Media (4 Platforms)</div>
-          <div class="pf"><div class="ck">✓</div>Weekly Strategy Calls</div>
-          <div class="pf"><div class="ck">✓</div>Competitor Analysis</div>
-          <div class="pf"><div class="ck">✓</div>Priority 24/7 Support</div>
-        </div>
-        <a href="#contact" class="pricing-cta">Let's Talk →</a>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 <!-- TESTIMONIALS -->
 <section id="testimonials">
@@ -929,6 +866,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:46px 5% 
           </div>
           <div class="rating-label" id="ratingLabel">Click to rate</div>
           <form class="review-form" action="https://formspree.io/f/xzdolqzw" method="POST">
+<input type="hidden" name="_next" value="https://anshulkushwaha-jhansi.vercel.app/thankyou.html" />
             <input type="hidden" name="_subject" value="New Review Submission"/>
             <input type="hidden" name="rating" id="ratingInput" value=""/>
             <div class="rf-row">
@@ -1132,6 +1070,7 @@ document.querySelectorAll('.rating-bars').forEach(el=>rbObs.observe(el));
         </div>
       </div>
       <form class="contact-form reveal-right" action="https://formspree.io/f/xzdolqzw" method="POST">
+<input type="hidden" name="_next" value="https://anshulkushwaha-jhansi.vercel.app/thankyou.html" />
         <div class="form-row">
           <div class="form-group"><label>Your Name *</label><input type="text" name="name" placeholder="Rahul Sharma" required/></div>
           <div class="form-group"><label>Email Address *</label><input type="email" name="email" placeholder="rahul@example.com" required/></div>
@@ -1191,7 +1130,7 @@ document.querySelectorAll('.rating-bars').forEach(el=>rbObs.observe(el));
         <ul>
           <li><a href="#about">About Me</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#pricing">Pricing</a></li>
+          
           <li><a href="#testimonials">Reviews</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -1490,7 +1429,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
   </div>
   <div class="chat-messages" id="chatMessages"></div>
   <div class="chat-suggestions" id="chatSuggestions">
-    <button class="suggestion" onclick="sendSuggestion(this)">💰 Pricing?</button>
+    
     <button class="suggestion" onclick="sendSuggestion(this)">🌐 WordPress?</button>
     <button class="suggestion" onclick="sendSuggestion(this)">📈 SEO?</button>
     <button class="suggestion" onclick="sendSuggestion(this)">🎯 Google Ads?</button>
