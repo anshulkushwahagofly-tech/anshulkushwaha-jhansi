@@ -28,16 +28,16 @@
   --transition-theme: background .4s ease, color .4s ease, border-color .4s ease;
 }
 [data-theme="dark"] {
-  --bg:#07070f;--bg2:#0e0e1a;--bg3:#13131e;
-  --card:#13131e;--card2:#1a1a28;--card3:#1f1f30;
+  --bg:#0f141a;--bg2:#151c24;--bg3:#1a232c;
+  --card:#1a232c;--card2:#222c38;--card3:#2b3745;
   --border:rgba(255,255,255,.07);--border2:rgba(255,255,255,.12);
   --text:#e8e8f2;--muted:#7a7a9a;--white:#ffffff;
   --shadow:rgba(0,0,0,.5);--glow:rgba(124,115,255,.3);
   --nav-bg:rgba(7,7,15,0.8);
 }
 [data-theme="light"] {
-  --bg:#f0f0f8;--bg2:#e8e8f4;--bg3:#ffffff;
-  --card:#ffffff;--card2:#f4f4fc;--card3:#ededf8;
+  --bg:#f2f5f8;--bg2:#e5ecf2;--bg3:#ffffff;
+  --card:#ffffff;--card2:#f0f4f8;--card3:#e4ebf2;
   --border:rgba(0,0,0,.08);--border2:rgba(0,0,0,.14);
   --text:#1a1a2e;--muted:#6060808;--white:#1a1a2e;
   --shadow:rgba(0,0,0,.12);--glow:rgba(124,115,255,.2);
@@ -45,13 +45,13 @@
   --muted:#606080;
 }
 [data-theme="custom"] {
-  --bg:#0d1117;--bg2:#161b22;--bg3:#1c2128;
-  --card:#1c2128;--card2:#21262d;--card3:#2d333b;
+  --bg:#090a0c;--bg2:#111316;--bg3:#1a1c20;
+  --card:#1a1c20;--card2:#23252a;--card3:#2d3036;
   --border:rgba(48,54,61,1);--border2:rgba(56,63,72,1);
   --text:#cdd9e5;--muted:#768390;--white:#cdd9e5;
   --shadow:rgba(0,0,0,.5);--glow:rgba(88,166,255,.25);
   --nav-bg:rgba(13,17,23,0.9);
-  --accent:#58a6ff;--accent2:#f78166;--accent3:#3fb950;
+  --accent:#899cb3;--accent2:#cddbe8;--accent3:#ffffff;
 }
 
 /* ═══════════════════════════════════════
@@ -67,9 +67,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);ove
 ═══════════════════════════════════════ */
 .theme-switcher{position:fixed;right:20px;top:50%;transform:translateY(-50%);z-index:998;display:flex;flex-direction:column;gap:10px;background:var(--card);border:1px solid var(--border);border-radius:50px;padding:10px 8px}
 .theme-btn{width:32px;height:32px;border-radius:50%;border:2px solid transparent;cursor:pointer;transition:all .3s;position:relative;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700}
-.theme-btn.dark-btn{background:linear-gradient(135deg,#07070f,#1a1a2e);color:#7c73ff;border-color:transparent}
-.theme-btn.light-btn{background:linear-gradient(135deg,#f0f0f8,#e0e0f0);color:#7c73ff;border-color:transparent}
-.theme-btn.custom-btn{background:linear-gradient(135deg,#0d1117,#58a6ff22);color:#58a6ff;border-color:transparent}
+.theme-btn.dark-btn{background:linear-gradient(135deg,#0f141a,#1a232c);color:#899cb3;border-color:transparent}
+.theme-btn.light-btn{background:linear-gradient(135deg,#f2f5f8,#e4ebf2);color:#899cb3;border-color:transparent}
+.theme-btn.custom-btn{background:linear-gradient(135deg,#090a0c,#1a1c20);color:#899cb3;border-color:transparent}
 .theme-btn.active{border-color:var(--accent);box-shadow:0 0 12px var(--glow)}
 .theme-btn:hover{transform:scale(1.15)}
 .theme-tooltip{position:absolute;right:46px;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:4px 10px;font-size:.7rem;color:var(--text);white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}
@@ -540,15 +540,9 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:46px 5% 
 
 <!-- THEME SWITCHER -->
 <div class="theme-switcher" id="themeSwitcher">
-  <button class="theme-btn dark-btn active" onclick="setTheme('dark')" title="Dark">
-    🌙<div class="theme-tooltip">Dark</div>
-  </button>
-  <button class="theme-btn light-btn" onclick="setTheme('light')" title="Light">
-    ☀️<div class="theme-tooltip">Light</div>
-  </button>
-  <button class="theme-btn custom-btn" onclick="setTheme('custom')" title="Custom">
-    ⚡<div class="theme-tooltip">Custom</div>
-  </button>
+  <button class="theme-btn dark-btn active" onclick="setTheme('dark')" title="Dark">🌙<div class="theme-tooltip">Dark</div></button>
+  <button class="theme-btn light-btn" onclick="setTheme('light')" title="Light">☀️<div class="theme-tooltip">Light</div></button>
+  <button class="theme-btn custom-btn" onclick="setTheme('custom')" title="Custom">⚡<div class="theme-tooltip">Custom</div></button>
 </div>
 
 <!-- MOBILE MENU -->
